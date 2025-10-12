@@ -10,7 +10,7 @@ module Top ;
 	logic signed [DATA_WIDTH2-1:0] operand_b2;
 	logic [1:0] opcode_tb;
 	logic signed [DATA_WIDTH-1:0] result_tb;
-	logic signed [DATA_WIDTH-1:0] result_tb2;
+	logic signed [DATA_WIDTH2-1:0] result_tb2;
 	// Signal in parent to connect
 	// Instantiate the ALU module
 	// Override the default WIDTH parameter
@@ -68,4 +68,5 @@ module Top ;
 	end
 	// Clock generator
 	always #5 clk = ~clk;
+
 endmodule : Top
