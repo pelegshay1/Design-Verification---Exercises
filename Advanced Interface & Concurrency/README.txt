@@ -5,7 +5,7 @@ Overview
 This project is a minimal, self-contained SystemVerilog Testbench designed to verify the correct operation and arbitration of a simple request/grant bus interface. 
 The primary goal of the testbench is to demonstrate concurrency control when multiple agents (drivers) attempt to access a shared resource (the DUT/bus) simultaneously using a SystemVerilog semaphore.
 
-The verification environment follows basic Universal Verification Methodology (UVM) principles, utilizing transaction-level modeling, a bus interface with clocking blocks, separate driver and monitor components, and a scoreboard/checker.
+The verification environment follows basic Universal Verification Methodology (UVM) principles, utilizing transaction-level modeling, a bus interface with clocking blocks, separate driver and monitor components, and a checker.
 
 File Structure (Plain Text Friendly)
 
@@ -48,5 +48,6 @@ Compile all SystemVerilog files: 'transaction.sv', 'bus_if.sv', 'dut_slave.sv', 
 Elaborate the top module: 'tb_concurrency'.
 
 Run the simulation.
+
 
 The simulation output should show the two drivers sequentially gaining access to the bus, and the checker confirming the validity of the two resulting transactions.
