@@ -1,4 +1,7 @@
 //define bus transaction class
+`ifndef BUS_TRANS_SV_
+`define BUS_TRANS_SV_
+
 class bus_trans;
 
 	//Propertis 
@@ -17,3 +20,4 @@ class bus_trans;
 	endfunction : display
 endclass : bus_trans
 
+`endif // BUS_TRANS_SV_
