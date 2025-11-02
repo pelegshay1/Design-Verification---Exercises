@@ -23,9 +23,10 @@ module tb_casting ;
 				$display("Casting successful!! %h",err_handle.error_code); // success
 			end
 			else begin
-				$display("Cating failed the object was not and error teansaction"); //fail
+				$display("Cating failed the object was not an error teansaction"); //fail
 			end
 		end
 		$finish;
 	end
 endmodule : tb_casting
+
