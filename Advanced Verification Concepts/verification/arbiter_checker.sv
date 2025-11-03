@@ -35,7 +35,7 @@ property A4_REQ1_IMPLIES_GRANT1;
 	endproperty : A4_REQ1_IMPLIES_GRANT1
 
 
-A4: assert property (A4_REQ1_IMPLIES_GRANT1) else $error("Implies 1 exclusion failed!");
+A4: assert property (A4_REQ1_IMPLIES_GRANT1) else $error("Granted1 not given for Request1!");
 
 property A5_REQ0_IMPLIES_GRANT0;
 	@(posedge clk) disable iff (reset)
@@ -43,7 +43,7 @@ property A5_REQ0_IMPLIES_GRANT0;
 	endproperty : A5_REQ0_IMPLIES_GRANT0
 
 
-A5: assert property (A5_REQ0_IMPLIES_GRANT0) else $error("Implies 1 exclusion failed!");
+A5: assert property (A5_REQ0_IMPLIES_GRANT0) else $error("Granted0 not given for Request0!");
 
 
 endmodule : arbiter_checker
